@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -5,3 +54,149 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    background-grey: #F4F3F4;
+    padding: 0px;  
+}
+p, li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    color: #5b5e6d;
+    text-align: center;
+}
+#not-center {
+    text-align: left;
+}
+div {
+    padding: 20px 20px 20px 20px;
+}
+.text-center {
+    text-align: center;
+}
+#navbar {
+    border-bottom: 0.5px #c7c9c7 solid;
+    height: 1.5em;
+    display: flex;
+    align-items: center; 
+}
+#logo {
+    width: 23%;
+    padding-left: 20px;
+}
+#navlist {
+    display: none;
+}
+h1 {
+    color: #2C303F;
+    font-size: 40px;
+    padding: 0px 0px 25px 0px;
+    width: 70%;
+}
+h2 {
+    color: #2C303F;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+input {
+    border: 0.5px solid #c7c9c7;
+    width: 100%;
+    height: 4.5em;
+    border-radius: 5px;
+}
+#buttonTop {
+    margin: 20px 0px 20px 0px;
+    color: white;
+    background-color: #192592;
+    width: 100%;
+    height: 4.5em;
+    border: none;
+    border-radius: 5px;
+}
+#home {
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    margin:auto;
+}
+.greyboxes {
+    background-color: #F5F5F5;
+    padding: 30px 30px 0px 30px;
+}
+.buttonSecond {
+    margin: 20px 20px;
+    margin-left: 30%;
+    margin-right: 30%
+    color: grey;
+    background-color: white;
+    width: 40%;
+    height: 4.5em;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.container { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #F5F5F5;
+}
+.boxes {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    vertical-align: middle;
+    border-bottom: 0.5px #c7c9c7 solid;
+}
+.companies {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    margin:auto;
+}
+#logo-2 {
+    width: 30%;
+}
+#box-white {
+    padding: 40px 0px 0px 0px;
+}
+.container-2 {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+.mini-container {
+    padding: 10px 0px;
+}
+li {
+    line-height: 2em;
+}
+.footer-head {
+    font-weight: bold;
+}
+ul {
+    text-align: center;
+}
+.footer-end {
+    padding: 5px;
+    display: inline;
+    font-size: 0.9em;
+}
+#footer {
+    margin: 0px -20px 0px -20px;
+    background-color: #F5F5F5;
+}
+#america {
+    height: 20px;
+}
+.end {
+    display: inline-block;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding: 10px;
+}
